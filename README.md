@@ -1,12 +1,14 @@
 # DarkHydraWeb
 Site do DarkHydra
 
-# Run Server 
+# Create Server
+npm init
+
+# Install express
+npm i express
+
+# Run Server
 node server.js
 
-npm i -g firebase-tools
-
-firebase login --no-localhost
-
-
-
+# Links
+https://www.npmjs.com/package/express
