@@ -11,7 +11,7 @@ app.get('/index.html', function (req, res) {
 })
 
 app.get('/ListaJogos.html',function(req,res){
-  res.sendFile(__dirname + "/" + "ListaJogos.html");
+    res.send(__dirname + "/" + "ListaJogos.html", {name: 'Victor'});
 });
 
 app.post('/CadastraJogos.html', urlencodedParser, function (req, res) {
@@ -37,7 +37,7 @@ app.post('/ConfirmaCadastraJogos.html', urlencodedParser, function (req, res) {
     var imagem3 = response.imagem3;
     var imagem4 = response.imagem4;
     console.log(response);
-    //funcoes.GravarJogos(tituloJogo, descJogo, tagsJogo, imagem1, imagem2, imagem3, imagem4);
+    funcoes.GravarJogos(tituloJogo, descJogo, tagsJogo, imagem1, imagem2, imagem3, imagem4);
     //console.log(LerNomesJogos()); 
 })
 
