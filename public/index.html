@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DarkHydra</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DarkHydra</title>
+
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 </head>
+
 <body>
-    <h1>DarkHydra Website</h1>
+	<h1>DarkHydra Website</h1>
+	<form action="/process_post" method="POST">
+		Nome do Jogo: <input type="text" name="NomeJogo"> <br>
+        Nome do Usuario: <input type="text" name="NomeUsuario">
+		<input type="submit" value="Submit">
+</form>
 </body>
-</html> 
+
+</html>
