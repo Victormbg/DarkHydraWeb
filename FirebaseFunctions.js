@@ -19,8 +19,13 @@ var banco = database.ref('Jogos/')
 
 module.exports.GravarJogos = function GravarJogos(NomeJogo, NomeUsuario) {
     banco.push({
-        Nome_Do_Jogo: NomeJogo,
-        Nome_Do_Usuario: NomeUsuario,
+        Titulo_Do_Jogo: tituloJogo,
+        Descricao_Do_Usuario: descJogo,
+        Tags_Do_Jogo: tagsJogo,
+        Imagem1_Do_Jogo: imagem1,
+        Imagem2_Do_Jogo: imagem2,
+        Imagem3_Do_Jogo: imagem3,
+        Imagem4_Do_Jogo: imagem4,
     });
     return console.log("Sucesso gravado no Firebase")
 }
